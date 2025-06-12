@@ -41,9 +41,13 @@
 </div>
 
 <script>
+    const encodedPassword = "Q29udHJvbGxpbmc=";
     function checkPassword() {
         var password = document.getElementById("password").value;
-        if (password === "Controlling") {
+        // Dekodierung des Passworts
+        var decodedPassword = atob(encodedPassword);
+        if (password === decodedPassword) {
+             localStorage.setItem("authenticated", "true"); // Setze die Authentifizierung
             window.location.href = "wedding.html";
         } else {
             alert("Falsches Passwort. Bitte versuchen Sie es erneut.");
