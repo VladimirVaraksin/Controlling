@@ -23,7 +23,9 @@
         padding: 40px 20px; /* Mehr Padding für einen eleganteren Look */
         border-bottom: 2px solid #000; /* Untere Linie für den Header */
         background-color: #f2c94c;
-        position: sticky;
+       position: sticky;
+            top: 0; /* Wichtig für sticky */
+            z-index: 1000; /* Sicherstellen, dass es über anderen Elementen liegt */
     }
     h1 {
         font-size: 3em; /* Größere Schriftgröße für den Haupttitel */
