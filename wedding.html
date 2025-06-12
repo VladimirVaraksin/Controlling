@@ -50,7 +50,7 @@
         background-color: #f9f9f9; /* Leicht grauer Hintergrund für Abschnitte */
     }
     table {
-        width: 90%;
+        width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
     }
@@ -67,6 +67,8 @@
         background-color: #f2f2f2; /* Hellgrauer Hintergrund für gerade Zeilen */
     }
     .map {
+        width: 100%; /* Full width of the parent */
+        height: 60vh; /* 60% of the viewport height */
         margin: 20px 0;
     }
     .risk-analysis {
@@ -123,7 +125,9 @@
         }
         table {
             font-size: 0.9em; /* Kleinere Schriftgröße für Tabellen auf Mobilgeräten */
-            width: 80%
+        }
+        .map {
+        height: 40vh; /* Höhe für kleinere Bildschirme anpassen */
         }
     }
 
@@ -137,9 +141,10 @@
         th, td {
             padding: 10px; /* Weniger Padding für Zellen auf sehr kleinen Bildschirmen */
         }
-         table {
-            width: 70%
+         .map {
+        height: 30vh; /* Höhe für kleinere Bildschirme anpassen */
         }
+    
     }
 </style>
 </head>
