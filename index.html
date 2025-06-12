@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwortgeschützte Seite</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Passwort eingeben</h1>
+    <input type="password" id="password" placeholder="Passwort">
+    <br>
+    <button onclick="checkPassword()">Einloggen</button>
+</div>
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("password").value;
+        if (password === "Controlling") {
+            window.location.href = "https://sites.google.com/view/controlling-hochzeit/our-wedding";
+        } else {
+            alert("Falsches Passwort. Bitte versuchen Sie es erneut.");
+        }
+    }
+</script>
+
+</body>
+</html>
