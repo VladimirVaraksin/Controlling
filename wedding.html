@@ -5,80 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hochzeit von Jason & Courtney</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f2c94c;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Weißer Hintergrund */
+        color: #000000; /* Schwarzer Text */
+        text-align: center; /* Zentrierter Text */
+    }
+    header {
+        padding: 40px 20px; /* Mehr Padding für einen eleganteren Look */
+        border-bottom: 2px solid #000; /* Untere Linie für den Header */
+    }
+    h1 {
+        font-size: 3em; /* Größere Schriftgröße für den Haupttitel */
+        margin: 0;
+        font-weight: bold; /* Fettdruck für den Titel */
+    }
+    h2 {
+        font-size: 1.8em; /* Größere Schriftgröße für Untertitel */
+        margin: 10px 0;
+        font-weight: normal; /* Normaler Schriftstil für Untertitel */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0; /* Abstand um Bilder */
+    }
+    .content {
+        padding: 20px;
+    }
+    .section {
+        margin: 40px 0;
+        padding: 20px; /* Padding für die Abschnitte */
+        border: 1px solid #000; /* Rahmen um die Abschnitte */
+        border-radius: 8px; /* Abgerundete Ecken */
+        background-color: #f9f9f9; /* Leicht grauer Hintergrund für Abschnitte */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 15px; /* Mehr Padding für Zellen */
+        text-align: left;
+    }
+    th {
+        background-color: #000; /* Schwarzer Hintergrund für Tabellenkopf */
+        color: #ffffff; /* Weißer Text für Tabellenkopf */
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Hellgrauer Hintergrund für gerade Zeilen */
+    }
+    .map {
+        margin: 20px 0;
+    }
+    .risk-analysis {
+        text-align: left;
+        margin: 20px;
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+        flex-wrap: wrap; /* Bilder in mehreren Zeilen anordnen */
+    }
+    .images img {
+        width: 30%;
+        border: 2px solid #000; /* Rahmen um Bilder */
+        border-radius: 8px; /* Abgerundete Ecken für Bilder */
+    }
+    footer {
+        padding: 20px;
+        border-top: 2px solid #000; /* Obere Linie für den Footer */
+        margin-top: 40px; /* Abstand über dem Footer */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
         h1 {
-            font-size: 2.5em;
-            margin: 0;
+            font-size: 2.5em; /* Kleinere Schriftgröße für Mobilgeräte */
         }
         h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .section {
-            margin: 40px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2c94c;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .map {
-            margin: 20px 0;
-        }
-        .risk-analysis {
-            text-align: left;
-            margin: 20px;
-        }
-        .images {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
+            font-size: 1.5em; /* Kleinere Schriftgröße für Mobilgeräte */
         }
         .images img {
-            width: 30%;
+            width: 100%; /* Bilder nehmen die volle Breite ein */
+            margin-bottom: 20px; /* Abstand zwischen Bildern */
         }
-    </style>
+        .section {
+            margin: 20px 0; /* Weniger Margin für Abschnitte auf Mobilgeräten */
+        }
+        table {
+            font-size: 0.9em; /* Kleinere Schriftgröße für Tabellen auf Mobilgeräten */
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+        }
+        h2 {
+            font-size: 1.3em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+        }
+        th, td {
+            padding: 10px; /* Weniger Padding für Zellen auf sehr kleinen Bildschirmen */
+        }
+    }
+</style>
 </head>
 <body>
 
 <header>
     <h1>JASON + COURTNEY</h1>
     <h2>Save the Date: 7. Juli 2026!</h2>
-    <img src="your-image-url.jpg" alt="Hochzeitsbild">
 </header>
 
 <div class="content">
+    <img src="your-image-url.jpg" alt="Hochzeitsbild">
     <div class="section">
         <h2>Inhalt</h2>
         <ul>
