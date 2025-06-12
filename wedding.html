@@ -111,6 +111,25 @@
     box-sizing: border-box; /* Box-Modell für alle Elemente */
     }
 
+    .map-container {
+            position: relative;
+            width: 100%; /* Volle Breite des übergeordneten Containers */
+            height: 60vh; /* Höhe in Viewport-Höhen */
+            margin: 20px 0; /* Optional: Margin für Abstand */
+            overflow: hidden; /* Verhindert Überlauf */
+            border: 1px solid #ccc; /* Optional: Rahmen um den Container */
+            border-radius: 8px; /* Optional: Abgerundete Ecken */
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Volle Breite des Containers */
+            height: 100%; /* Volle Höhe des Containers */
+            border: 0; /* Kein Rahmen */
+        }
+
     /* Responsive Styles */
     @media (max-width: 768px) {
         h1 {
@@ -188,8 +207,10 @@
      <div class="section">
 
         <h2>Location</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7938.004396363306!2d72.9907555!3d5.85531125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b6b6c7786b0b6b5%3A0x190c3963eb6faff1!2sVaadhoo!5e0!3m2!1sen!2sde!4v1749760361432!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p><a href="https://maps.app.goo.gl/eKk7kBzMcLJZ8W1x7" target="_blank">Standort auf Google Maps anzeigen</a></p>
+        <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7938.004396363306!2d72.9907555!3d5.85531125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b6b6c7786b0b6b5%3A0x190c3963eb6faff1!2sVaadhoo!5e0!3m2!1sen!2sde!4v1749765460812!5m2!1sen!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+         <p><a href="https://maps.app.goo.gl/eKk7kBzMcLJZ8W1x7" target="_blank">Standort auf Google Maps anzeigen</a></p>
   
      </div>
 
